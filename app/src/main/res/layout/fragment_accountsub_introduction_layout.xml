@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/head_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="INTRODUCER DETAILS"
+        android:textSize="22sp" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_above="@+id/rel"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head_text"
+        android:layout_centerInParent="true"
+        android:fillViewport="true">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Name of Introducer"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/intro_name_edit_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:background="#fff"
+                            android:gravity="center"
+                            android:hint="Enter Name"
+                            android:inputType="textCapCharacters"
+                            android:maxLines="1"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Introducer Type"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff">
+
+                        <Spinner
+                            android:id="@+id/intro_type_Spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:spinnerMode="dialog" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Introducer Address"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/intro_adress_edit_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:inputType="textCapCharacters"
+                            android:background="#fff"
+                            android:gravity="center"
+                            android:hint="Enter Address"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Reference Details"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/intro_reference"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:inputType="textCapCharacters"
+                            android:background="#fff"
+                            android:gravity="center"
+                            android:hint="Enter Reference Details"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mobile Number"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/intro_mobile_edit_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:background="#fff"
+                            android:gravity="center"
+                            android:hint="Enter Mobile Number"
+                            android:inputType="phone"
+                            android:maxLines="1"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Contact Number"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/intro_contact_numer_edit_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:background="#fff"
+                            android:gravity="center"
+                            android:hint="Enter Contact Number"
+                            android:inputType="phone"
+                            android:maxLines="1"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </TableLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp">
+
+        <Button
+            android:id="@+id/intro_prevbtn"
+            style="@style/RbButton.Inverse.Rounded.Red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="PREV" />
+
+        <Button
+            android:id="@+id/intro_nextbtn"
+            style="@style/RbButton.Inverse.Rounded.LightBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="NEXT" />
+    </RelativeLayout>
+
+</RelativeLayout>

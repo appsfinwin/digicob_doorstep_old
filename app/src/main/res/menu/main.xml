@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/connect_bt_device_menu"
+        android:title="Connect BT Device"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:icon="@mipmap/ic_power_settings_new_white_48dp"
+        android:orderInCategory="100"
+        android:title="Logout"
+        app:showAsAction="withText" />
+    <group android:checkableBehavior="all"
+        android:visible="false">
+        <item
+            android:id="@+id/item1"
+            android:icon="@android:drawable/ic_menu_preferences"
+            android:title="Highlight Options"
+            android:titleCondensed="Options">
+        </item>
+        <item
+            android:id="@+id/item2"
+            android:checkable="true"
+            android:icon="@android:drawable/ic_menu_preferences"
+            android:title="Persist"
+            android:titleCondensed="Persist">
+
+        </item>
+    </group>
+</menu>

@@ -1,0 +1,120 @@
+{
+  "mini_statement": {
+    "data": {
+      "TRANSACTONS": [
+        {
+          "TXN_ID": "1901161110",
+          "BALANCE": "58448",
+          "PARTICULAR": "BY CASH DEPOSIT",
+          "TRAN_TYPE": "CASH",
+          "DORC": "C",
+          "TXN_DATE": "1\/16\/2019 12:00 AM",
+          "TXN_AMOUNT": "1000"
+        },
+        {
+          "TXN_ID": "1901151305",
+          "BALANCE": "57448",
+          "PARTICULAR": "BY CASH DEPOSIT",
+          "TRAN_TYPE": "CASH",
+          "DORC": "C",
+          "TXN_DATE": "1\/15\/2019 11:20 AM",
+          "TXN_AMOUNT": "1556"
+        },
+        {
+          "TXN_ID": "1901111724",
+          "BALANCE": "55892",
+          "PARTICULAR": "BY CASH DEPOSIT",
+          "TRAN_TYPE": "CASH",
+          "DORC": "C",
+          "TXN_DATE": "1\/11\/2019 09:05 AM",
+          "TXN_AMOUNT": "1588"
+        },
+        {
+          "TXN_ID": "1901101740",
+          "BALANCE": "54304",
+          "PARTICULAR": "BY CASH DEPOSIT",
+          "TRAN_TYPE": "CASH",
+          "DORC": "C",
+          "TXN_DATE": "1\/10\/2019 10:11 AM",
+          "TXN_AMOUNT": "148"
+        },
+        {
+          "TXN_ID": "1901101152",
+          "BALANCE": "54156",
+          "PARTICULAR": "BY CASH DEPOSIT",
+          "TRAN_TYPE": "CASH",
+          "DORC": "C",
+          "TXN_DATE": "1\/10\/2019 08:30 AM",
+          "TXN_AMOUNT": "1885"
+        },
+        {
+          "TXN_ID": "1901041515",
+          "BALANCE": "52271",
+          "PARTICULAR": "BY CASH DEPOSIT",
+          "TRAN_TYPE": "CASH",
+          "DORC": "C",
+          "TXN_DATE": "1\/4\/2019 11:00 AM",
+          "TXN_AMOUNT": "1788"
+        },
+        {
+          "TXN_ID": "1901041501",
+          "BALANCE": "50483",
+          "PARTICULAR": "BY CASH DEPOSIT",
+          "TRAN_TYPE": "CASH",
+          "DORC": "C",
+          "TXN_DATE": "1\/4\/2019 09:56 AM",
+          "TXN_AMOUNT": "1569"
+        },
+        {
+          "TXN_ID": "1901021502",
+          "BALANCE": "48914",
+          "PARTICULAR": "BY CASH DEPOSIT",
+          "TRAN_TYPE": "CASH",
+          "DORC": "C",
+          "TXN_DATE": "1\/2\/2019 12:00 AM",
+          "TXN_AMOUNT": "2500"
+        },
+        {
+          "TXN_ID": "1901021500",
+          "BALANCE": "46414",
+          "PARTICULAR": "BY CASH DEPOSIT",
+          "TRAN_TYPE": "CASH",
+          "DORC": "C",
+          "TXN_DATE": "1\/2\/2019 10:49 AM",
+          "TXN_AMOUNT": "1000"
+        },
+        {
+          "TXN_ID": "1812201150",
+          "BALANCE": "45414",
+          "PARTICULAR": "BY CASH DEPOSIT",
+          "TRAN_TYPE": "CASH",
+          "DORC": "C",
+          "TXN_DATE": "12\/20\/2018 11:10 AM",
+          "TXN_AMOUNT": "2500"
+        },
+        {
+          "TXN_ID": "1812201149",
+          "BALANCE": "42914",
+          "PARTICULAR": "BY CASH DEPOSIT",
+          "TRAN_TYPE": "CASH",
+          "DORC": "C",
+          "TXN_DATE": "12\/20\/2018 12:25 AM",
+          "TXN_AMOUNT": "2500"
+        },
+        {
+          "TXN_ID": "1812051636",
+          "BALANCE": "40414",
+          "PARTICULAR": "BY CASH DEPOSIT",
+          "TRAN_TYPE": "CASH",
+          "DORC": "C",
+          "TXN_DATE": "12\/5\/2018 10:20 AM",
+          "TXN_AMOUNT": "5000"
+        }
+      ],
+      "CURRENT_BALANCE": "58448",
+      "NAME": "ASHIK PAUL",
+      "MOBILE": "xxxxxxx079",
+      "ACC_NO": "xxxxxxxx3509"
+    }
+  }
+}

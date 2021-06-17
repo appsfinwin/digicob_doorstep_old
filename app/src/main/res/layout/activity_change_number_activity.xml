@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.finwingway.digicob.Change_number_activity">
+
+<LinearLayout
+    android:gravity="center"
+    android:layout_centerInParent="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Mobile Number"/>
+    <LinearLayout
+        android:background="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/change_mobile_number_editText"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:background="@drawable/edit_text_style"
+            android:hint="Enter Account Number Here"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/verify_mobile_no_textView"
+        android:layout_marginTop="10dp"
+        android:text="Verify"
+        style="@style/RbButton.Green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+<!--
+    <LinearLayout
+        android:id="@+id/kycu_linear_confirm_mobile"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Please confirm your mobile number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/kycu_confirmmobile_button"
+            style="@style/RbButton.Green"
+            android:text="OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+-->
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/cmn_otp_linear"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:id="@+id/kycu_otp_edit_text"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:textColor="#000"
+                android:background="@drawable/edit_text_style"
+                android:hint="Enter OTP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/cmn_validate_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/RbButton.Green"
+            android:text="Validate"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+</RelativeLayout>

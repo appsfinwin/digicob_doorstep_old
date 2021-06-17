@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/transactions"
+            android:icon="@drawable/rupee"
+            android:title="Transactions" />
+        <item
+            android:id="@+id/loans"
+            android:icon="@drawable/loan"
+            android:title="JLG Loan" />
+        <item
+            android:id="@+id/loansweb"
+            android:icon="@drawable/loan"
+            android:visible="false"
+            android:title="JLG Loan Web" />
+        <item
+            android:id="@+id/accounts"
+            android:icon="@drawable/accounts"
+            android:title="Accounts" />
+        <item
+            android:id="@+id/enquiry"
+            android:icon="@drawable/enquiry"
+            android:title="Enquiry" />
+        <item
+            android:id="@+id/recharge"
+            android:icon="@drawable/recharge_icon"
+            android:title="Recharge" />
+        <item
+            android:id="@+id/bc_report"
+            android:icon="@drawable/bcreport"
+            android:title="BC Report" />
+        <item
+            android:id="@+id/password"
+            android:icon="@drawable/change_pass"
+            android:title="Agent Management" />
+    </group>
+
+    <!-- <item android:title="Communicate">
+         <menu>
+             <item
+                 android:id="@+id/nav_share"
+                 android:icon="@drawable/ic_menu_share"
+                 android:title="Share" />
+             <item
+                 android:id="@+id/nav_send"
+                 android:icon="@drawable/ic_menu_send"
+                 android:title="Send" />
+         </menu>
+     </item>-->
+
+</menu>

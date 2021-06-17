@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:stretchColumns="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:text="KYC-UPDATE"
+                    android:textColor="#b60d0d"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/linear_first_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:text="Customer ID"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff">
+
+                            <EditText
+                                android:id="@+id/kycu_acc_no_edit_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edit_text_style"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:hint="Enter Customer ID"
+                                android:maxLines="1"
+                                android:textColor="#000"
+                                android:textSize="22sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/kycu_acc_no_submit_btn"
+                                style="@style/RbButton.Green"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Submit" />
+
+                            <ImageButton
+                                android:id="@+id/kycu_acc_search_btn"
+                                android:layout_width="85dp"
+                                android:layout_height="67dp"
+                                android:layout_alignEnd="@+id/Linear1"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignRight="@+id/Linear1"
+                                android:layout_gravity="center"
+                                android:background="@color/float_transparent"
+                                android:padding="15dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/search" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/kycu_details_linear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Account Name"
+                            android:textStyle="bold" />
+
+                        <HorizontalScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/kycu_account_name_text_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:scrollHorizontally="true"
+                                android:textSize="20sp" />
+                        </HorizontalScrollView>
+                        <!--<TextView
+                            android:text="Gender"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <Spinner
+                            android:id="@+id/kycu_gender_spinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"/>
+                -->
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="DOB" />
+
+                        <Button
+                            android:id="@+id/kycu_date_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="DD/MM/YYY" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="PAN CARD Number"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#fff">
+
+                            <EditText
+                                android:id="@+id/kycu_pan_no_edit_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edit_text_style"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:hint="Enter PAN Card Number Here"
+                                android:maxLines="1"
+                                android:textColor="#000"
+                                android:textSize="22sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="Mobile Number"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#fff">
+
+                            <TextView
+                                android:id="@+id/kycu_mobile_number_textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edit_text_style"
+                                android:text="-- Not Registered --"
+                                android:textColor="#ae0404"
+                                android:textSize="22sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/kycu_change_mobile_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@null"
+                            android:text="Change Mobile Number ?"
+                            android:textColor="#ae0404" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp">
+
+                            <ImageButton
+                                android:id="@+id/kycu_applicantsPhoto_imageButton"
+                                android:layout_width="92dp"
+                                android:layout_height="92dp"
+                                android:layout_gravity="center"
+                                android:background="@null"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/user_icon"></ImageButton>
+
+                        </FrameLayout>
+
+                        <FrameLayout
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp">
+
+                            <ImageButton
+                                android:id="@+id/kycu_imagebtn_sign"
+                                android:layout_width="92dp"
+                                android:layout_height="92dp"
+                                android:layout_gravity="center"
+                                android:background="@null"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/signature"></ImageButton>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageButton
+                                android:id="@+id/kycu_biometric_imagebtn"
+                                android:layout_width="92dp"
+                                android:layout_height="92dp"
+                                android:layout_gravity="center"
+                                android:background="@null"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/finger_scanner_icon"></ImageButton>
+                        </FrameLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp">
+
+                            <ImageButton
+                                android:id="@+id/kycu_idproof_imagebtn"
+                                android:layout_width="92dp"
+                                android:layout_height="92dp"
+                                android:layout_gravity="center"
+                                android:background="@null"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/proofid"></ImageButton>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageButton
+                                android:id="@+id/kycu_address_imagebtn"
+                                android:layout_width="92dp"
+                                android:layout_height="92dp"
+                                android:layout_gravity="center"
+                                android:background="@null"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/proofid"></ImageButton>
+
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#fa6f6f" />
+
+                    <Button
+                        android:id="@+id/kycu_update_btn"
+                        style="@style/RbButton.Green"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="25dp"
+                        android:text="UPDATE KYC" />
+
+                </LinearLayout>
+                <!--
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_marginRight="15dp"
+                                android:textStyle="bold"
+                                android:text="Agent Code : "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <EditText
+                                android:inputType="number"
+                                android:hint="Enter Code"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+                -->
+
+            </LinearLayout>
+        </LinearLayout>
+    </TableLayout>
+</ScrollView>

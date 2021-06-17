@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_crt_center"
+                android:layout_width="262dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/cntr_create_btn_bg"
+                android:gravity="right|center"
+                android:scaleType="fitStart"
+                android:text="Create Center  "
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/btn_crt_group"
+                android:layout_width="262dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grp_create_btn_bg"
+                android:gravity="right|center"
+                android:text="Create Group  "
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/btn_crt_loan"
+                android:layout_width="262dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/loan_create_btn_bg"
+                android:gravity="right|center"
+                android:text="LOAN CREATION  "
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/btn_pending_list"
+                android:layout_width="262dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/pendinglist_btn_bg"
+                android:gravity="right|center"
+                android:text="Pending List   "
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/btn_jlg_trnsctn"
+                android:layout_width="262dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/transaction_btn_bg"
+                android:gravity="right|center"
+                android:text="Transaction   "
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/btn_jlg_closing"
+                android:layout_width="262dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/jlg_closing"
+                android:gravity="right|center"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/btn_jlg_trnsctn_split"
+                android:layout_width="262dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/split_trnsctn_btn_bg"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/btn_jlg_closing_split"
+                android:layout_width="262dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/jlg_split_closing"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/btn_jlg_house_visit"
+                android:layout_width="262dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/jlg_house_vst_btn_bg"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

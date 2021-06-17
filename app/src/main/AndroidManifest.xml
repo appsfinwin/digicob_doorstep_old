@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.finwingway.digicob">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name="com.finwingway.digicob.leopard.GlobalPool"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:node="replace"
+        tools:ignore="GoogleAppIndexingWarning">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.finwingway.digicob.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name="com.finwingway.digicob.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"/>
+
+        <service
+            android:name="com.finwingway.digicob.Bluetooth_Service"
+            android:enabled="true" />
+
+        <activity android:name="com.finwingway.digicob.Signature_activity" />
+        <activity android:name="com.finwingway.digicob.login" />
+        <activity
+            android:name="com.finwingway.digicob.SplashScreen"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+            <activity
+            android:name=".login"
+            android:noHistory="true" />
+        -->
+
+        <activity
+            android:name="com.finwingway.digicob.sil.BluetoothChat"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity
+            android:name="com.finwingway.digicob.sil.DeviceListActivity"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+
+        <activity android:name="com.finwingway.digicob.print.Main" />
+        <activity android:name="com.finwingway.digicob.print.DeviceListActivity" />
+        <activity android:name="com.finwingway.digicob.Receipt_Deposit" />
+        <activity android:name="com.finwingway.digicob.BalanceEnquiry" />
+        <activity android:name="com.finwingway.digicob.Receipt_Withdrawal" />
+        <activity android:name="com.finwingway.digicob.Enquiry_Mini_Statement_List" />
+        <activity android:name="com.finwingway.digicob.Receipt_Transfer" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name="com.finwingway.digicob.Accounts_Tab_Fragment_IDActivity" />
+        <activity android:name="com.finwingway.digicob.Accounts_Tab_Fragment_AddressActivity" />
+        <activity android:name="com.finwingway.digicob.Accounts_Tab_Fragment_PhotographActivity" />
+        <activity android:name="com.finwingway.digicob.BioMetricActivity" />
+
+        <activity
+            android:name="com.finwingway.digicob.Change_kyc_image"
+            android:label="Image"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name="com.finwingway.digicob.leopard.Act_BTDiscovery" />
+        <activity android:name="com.finwingway.digicob.leopard.Act_Main" />
+        <!--
+        <receiver android:name=".ConnectivityChangeReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        -->
+        <activity android:name="com.finwingway.digicob.Receipt_Deposit_Leopard" />
+        <activity android:name="com.finwingway.digicob.Biometric_Leopard" />
+        <activity android:name="com.finwingway.digicob.Change_number_activity" />
+        <activity
+            android:name="com.finwingway.digicob.Loan_Number_Search"
+            android:label="Account Search" />
+        <!--android:theme="@android:style/Theme.Dialog"-->
+        <activity android:name="com.finwingway.digicob.Receipt_Loan" />
+        <activity android:name="com.finwingway.digicob.Receipt_Loan_closing" />
+
+
+        <activity
+            android:name="com.finwingway.digicob.Account_Search"
+            android:label="Account Search" />
+        <!--android:theme="@android:style/Theme.Dialog"-->
+        <activity
+            android:name="com.finwingway.digicob.loanModule.Search_group_created"
+            android:label="Search Group" />
+        <!--android:theme="@android:style/Theme.Dialog"-->
+        <activity
+            android:name="com.finwingway.digicob.loanModule.Search_group"
+            android:label="Search Group"/>
+        <!--android:theme="@android:style/Theme.Dialog"-->
+        <activity
+            android:name="com.finwingway.digicob.loanModule.Search_Center"
+            android:label="Search Centre" />
+        <!--android:theme="@android:style/Theme.Dialog"-->
+        <activity
+            android:name="com.finwingway.digicob.loanModule.Search_customer"
+            android:label="Search Customer" />
+        <!--android:theme="@android:style/Theme.Dialog"-->
+
+        <activity android:name="com.finwingway.digicob.inauguration.Acc_Statement_List" />
+
+
+        <activity
+            android:name="com.finwingway.digicob.loanModule.jlgWebView.LoanMainFragmentWebView"
+            android:theme="@style/AppThemeWebview">
+            <!--<meta android:name="theme-color"-->
+                <!--android:content="#999999" />-->
+            <!--<meta-data-->
+                <!--android:name="android.support.PARENT_ACTIVITY" />-->
+        </activity>
+
+    </application>
+
+</manifest>

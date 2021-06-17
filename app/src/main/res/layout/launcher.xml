@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#737272"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageViewFingerprint"
+                android:contentDescription=" fingerprint_capture_image"
+                android:layout_width="320dp"
+                android:layout_height="320dp"
+                android:src="@android:drawable/picture_frame" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ToggleButton
+                android:id="@+id/toggleButtonAutoOn"
+                android:layout_width="121dp"
+                android:layout_height="wrap_content"
+                android:text="Auto ON"
+                android:textOff="Auto ON : Disabled"
+                android:textOn="Auto ON : Enabled" />
+        </LinearLayout>
+       <LinearLayout
+           android:layout_gravity="center"
+           android:orientation="horizontal"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+           <Button
+               android:id="@+id/buttonLedOn"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text=" LED ON"
+               android:textSize="28sp" />
+
+           <Button
+               android:id="@+id/buttonCapture"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="CAPTURE"
+               android:textSize="28sp" />
+       </LinearLayout>
+        <Button
+            android:id="@+id/biometricOkbtn"
+            android:layout_gravity="center"
+            android:text="OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</RelativeLayout>
+
+

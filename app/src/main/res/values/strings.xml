@@ -1,0 +1,285 @@
+<resources>
+    <string name="app_name">DigiCoB</string>
+    <string name="bank_name"> THIRU-KOCHI URBAN NIDHI LIMITED
+    </string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string-array name="brew_array">
+        <item>Finger-Print</item>
+        <item>ID Proof</item>
+    </string-array>
+    <string-array name="sign_respect">
+        <item>Mr.</item>
+        <item>Ms.</item>
+        <item>Mrs.</item>
+    </string-array>
+    <string-array name="marital_status">
+        <item>Married</item>
+        <item>Un-Married</item>
+    </string-array>
+    <string-array name="marital">
+        <item>Single</item>
+        <item>Married</item>
+    </string-array>
+    <string-array name="relationship">
+        <item>Father</item>
+        <item>Mother</item>
+        <item>Spouse</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="cashdeposit_acc_type">
+        <item>Savings</item>
+        <item>Current</item>
+        <item>Recurring</item>
+        <item>Fixed</item>
+    </string-array>
+    <string-array name="cashdeposit_acc_type_id">
+        <item>SB</item>
+        <item>CA</item>
+        <item>RD</item>
+        <item>FD</item>
+    </string-array>
+    <string-array name="cashdeposit_acc_scheme">
+        <item>Member</item>
+        <item>Non Member</item>
+        <item>Company</item>
+        <item>Firm</item>
+        <item>Staff</item>
+    </string-array>
+
+
+
+    <string name="physical_house">1.Physical house verification with a focus on:
+.House-roof &amp; wall type as per housing criteria
+.Customer lives in approved area
+.Lifestyle details as per 'Housing information' section in the CPF(category:Lower middle class,poor,very poor)</string>
+
+
+    <string name="verification_of">2.Verification of KYC documents;CP &amp; Loan Application
+.Verify correct postal address &amp; pin code is mentioned in the CPF
+.Verify photo ID proof with original ID
+.Verify address proof with original proof of the current residence
+.Verify age proof with original for customer &amp; spouse
+.Check if permanent address details with pincode is in CPF</string>
+
+
+    <string name="purpose_of">3.Purpose of the new loan:
+.Check if the purpose of the new loan is towards income generation/consumption purpose.
+.Check if the loan amount applied justifies the said purpose.
+.Is the customer's spouse/son aware of the loan applied for the said purpose(applicable as per the Branch Credit policy)</string>
+
+
+    <string name="occupation">4.Verification of occupation &amp; Income:
+.Does the customer\'s occupation match the loan purpose?(Occupation of spouse/son should match the loan purpose,where applicable)
+.Check if customer is in an occupation that may affect our relationship.
+.Does the customer have sufficient repayment capacity to repay the applied loan-refer \'Household cash flow' and 'calculation of surplus' section in the Customer Profile Form?
+.Does the income and expense information given by the customer match with the details in the Customer Profile Form?
+.customer Business verification is mandatory for all loans.</string>
+
+    <string name="group_guarantee">5.Group Guarantee:
+.Has the customer supported her group members in the past year?
+.Did anybody ask for commission when applying for the loan?
+.Is the customer agreeble for the proposed group merger
+.Check for blood relatives in the group
+.Check if customer understands the insurance claim process.</string>
+
+
+    <string name="outside_borrowings">6.Outside Borrowings:
+.Verify if the customer borrowings match with the details given in the \'Outside Borrowings\' section of the customer Profile form.
+.Does the customer understand the impact of the Credit Bureau on her?If she defaults,does she know that she will not get future loans?
+.Ask if there isover borrowing &amp; ghost lending in her group or centre-reiterate the Sankalp video examples.
+.Ensure customer has not borrowed from more than one MFI and total borrowing does not exceed Rs 60000 from all sources.</string>
+
+
+    ------------------------------------------- sil
+    -------------------------------------------------
+
+    <string name="connect">Connect</string>
+    <string name="Disccoverable">Discoverable</string>
+
+    ------------------------------------------- Leopard
+    -------------------------------------------------
+
+    <string name="language">en</string>
+
+    <string name="actMain_name">Leopard Demo App</string>
+    <string name="actMain_link_device_info_title">Selected Device :</string>
+    <string name="actMain_link_device_service_uuid">Service\'s UUID：</string>
+    <string name="actMain_find_service_uuids">Searching services list&#8230;</string>
+    <string name="actMain_not_find_service_uuids">Not find services list.</string>
+    <string name="actMain_device_info">%1$s</string>
+    <string name="actMain_btn_pair">Pair</string>
+    <string name="actMain_btn_comm">Connect</string>
+    <string name="actMain_tv_hint_service_uuid_not_bond">Please create pair.</string>
+    <string name="actMain_tv_select_mode">Select communication mode</string>
+    <string name="actMain_msg_does_not_support_uuid_service">Android version does not support this.</string>
+    <string name="actMain_msg_bluetooth_Bonding">pairing&#8230;</string>
+    <string name="actMain_msg_device_connecting">Connecting device&#8230;</string>
+    <string name="actMain_msg_device_connect_fail">Communication failure</string>
+    <string name="actMain_msg_device_connect_succes">Successful connection</string>
+    <string name="actMain_msg_bluetooth_Bond_Success">Pairing successful</string>
+    <string name="actMain_msg_bluetooth_Bond_fail">Pairing failed</string>
+    <string name="actMain_msg_pair_pwd_error">The pairing password must be 4 digits</string>
+    <string name="actMain_menu_rescan">Rescan</string>
+    <string name="actDiscovery_name">FacTP Demo app</string>
+    <string name="actDiscovery_msg_select_device">Select the device you need to connect</string>
+    <string name="actDiscovery_msg_not_find_device">Devices not found</string>
+    <string name="actDiscovery_msg_scaning_device">Scanning for Bluetooth Devices, Please wait&#8230;</string>
+    <string name="actDiscovery_msg_starting_device">Starting Bluetooth &#8230;</string>
+    <string name="actDiscovery_msg_start_bluetooth_fail">Bluetooth device start fail</string>
+    <string name="actDiscovery_msg_bluetooth_not_start">Bluetooth is not enabled</string>
+    <string name="actDiscovery_menu_scan">Scan</string>
+    <string name="actDiscovery_bond_bonded">Bonded</string>
+    <string name="actDiscovery_bond_nothing">Nothing</string>
+
+    <string name="actByteStream_name">Byte stream mode</string>
+    <string name="actByteStream_input_hint">input the send commands</string>
+    <string name="actByteStream_btn_send_desc">Send button</string>
+    <string name="actByteStream_tv_receive_text">Data receive</string>
+
+    <string name="actCmdLine_name">CMD line mode</string>
+    <string name="actCmdLine_input_hint">input char (press [Enter] key)</string>
+    <string name="actCmdLine_msg_helper">Current end flag: %1$s,Click [send] button finished sending, at the soft keyboard;\n\n</string>
+    <string name="actCmdLine_dialog_title_end_flg">Set command end flag</string>
+    <string name="actCmdLine_et_hint_end_flg_val">Command end flag(HEX format)</string>
+
+    <string name="actKeyBoard_name">Keyboard mode</string>
+    <string name="actKeyBoard_tv_Init">Set the buttons properties, click [Set end flag]. \n</string>
+    <string name="actKeyBoard_tv_set_btnname">BTN Name</string>
+    <string name="actKeyBoard_tv_set_btnname_hint">button display name</string>
+    <string name="actKeyBoard_tv_long_pass_freq_hint">Unit ms，must be >%1$d</string>
+    <string name="actKeyBoard_set_btn_down_send_value">BTN Down </string>
+    <string name="actKeyBoard_set_btn_hold_send_value">BTN Hold</string>
+    <string name="actKeyBoard_set_btn_up_send_value">BTN Up</string>
+    <string name="actKeyBoard_set_send_value_hint">Input send value</string>
+    <string name="actKeyBoard_tv_set_keyboard_helper">Now is the keyboard setting mode, Click the button area that setting.\n Click [Buttons set complete]back to send mode.\n</string>
+    <string name="actKeyBoard_msg_helper_endflg">Command line last chars is: %1$s;\n</string>
+    <string name="actKeyBoard_msg_repeat_freq_set">Long-press the trigger frequency: %1$dms;</string>
+
+    <string name="actAbout_name">About me</string>
+
+    <string name="dialog_title_sys_err">System Error</string>
+    <string name="dialog_title_alert">Alert</string>
+    <string name="dialog_title_io_mode_set">IO mode selection</string>
+    <string name="dialog_title_end_flg">Set end flag</string>
+    <string name="dialog_title_keyboard_set">Button Function setting</string>
+    <string name="dialog_title_keyboard_long_pass_frea">Long-press repeatedly freq(ms)</string>
+    <string name="dialog_io_mode_input_set">Input type</string>
+    <string name="dialog_io_mode_output_set">Output type</string>
+    <string name="dialog_io_mode_ascii">ASCII</string>
+    <string name="dialog_io_mode_hex">Hex(00-FF)</string>
+    <string name="dialog_end_flg_select">Select end flag template:</string>
+    <string name="dialog_end_flg_rn">Char(\'\\r\\n\')</string>
+    <string name="dialog_end_flg_n">Char(\'\\n\')</string>
+    <string name="dialog_end_flg_other">Other</string>
+    <string name="dialog_end_flg_hex_val">HEX value of the end flag:</string>
+
+    <string name="btn_ok">OK</string>
+    <string name="btn_click_me">ClickMe</string>
+    <string name="tv_send_area_title">Sent data area</string>
+    <string name="tv_receive_area_title">Received data area</string>
+    <string name="menu_close">Close</string>
+    <string name="menu_clear">Clear</string>
+    <string name="menu_io_mode">Set IO mode</string>
+    <string name="menu_save_to_file">Save2File</string>
+    <string name="menu_clear_cmd_history">Clear History</string>
+    <string name="menu_set_stop_flg">Set end flag</string>
+    <string name="menu_helper">Helper</string>
+    <string name="menu_set_key_board_start">Buttons set</string>
+    <string name="menu_set_key_board_end">Buttons set complete</string>
+    <string name="menu_set_key_board_event">Set trigger mode</string>
+    <string name="menu_set_button_long_pass_freq">Set Long-press freq</string>
+    <string name="menu_about">About</string>
+
+    <string name="device_type_bredr">BR/EDR Bluetooth</string>
+    <string name="device_type_ble">Low Energy Bluetooth</string>
+    <string name="device_type_dumo">Duplex mode Bluetooth</string>
+
+    <string name="templet_txd">Txd: %1$dB</string>
+    <string name="templet_rxd">Rxd: %1$dB</string>
+    <string name="templet_hold_time">Running: %1$ds</string>
+
+    <string name="msg_send_data_fail">Failed to send data</string>
+    <string name="msg_not_hex_string">Invalid HEX string</string>
+    <string name="msg_save_file_fail">Failed to save the file</string>
+    <string name="msg_receive_data_wating">Waiting to receive&#8230;\n</string>
+    <string name="msg_receive_data_stop">Receiver terminated</string>
+    <string name="msg_msg_bt_connect_lost">Bluetooth device communications connection is lost, try to reconnect</string>
+    <string name="msg_helper_endflg_nothing">End flag is not set. Click [Set end flag] set;\n</string>
+
+    <string name="tips_click_to_hide">Click hidden</string>
+    <string name="tips_click_to_show">Click show</string>
+    <string name="printer">Printer</string>
+    <string name="fps">Fps</string>
+    <string name="Magneticcard">Mag Card</string>
+    <string name="smartcard">Smart Card</string>
+    <string name="serial">Serial Port</string>
+    <string name="Connect">Connect</string>
+    <string name="testprint">Test Print</string>
+    <string name="logoprint">Evolute Logo</string>
+    <string name="customtext">Custom Text</string>
+    <string name="diagnostics">Diagnostics</string>
+    <string name="unicode">UniCode</string>
+    <string name="paperfeed">Paperfeed</string>
+    <string name="bitmap">Bitmap Print</string>
+    <string name="Grayscale">Grayscale Print</string>
+    <string name="barcode">Barcode Print</string>
+    <string name="QRcode">QRcode Print</string>
+    <string name="lineprint">Line Print</string>
+    <string name="capturefinger">Capture Finger</string>
+    <string name="verify">Verify finger</string>
+    <string name="imagecompressed">Image Compressed</string>
+    <string name="verifycompresees">Verify Compressed</string>
+    <string name="ImageUncompressed">Image Uncompressed</string>
+    <string name="verifyUncompressed">Verify Uncompressed</string>
+    <string name="verifymany">Verify Many</string>
+    <string name="verifymatch">Verify Match</string>
+    <string name="readmagcard">Read MagCard</string>
+    <string name="display1">Display Track1</string>
+    <string name="display2">Dispaly Track2</string>
+    <string name="powerup">Power Up</string>
+    <string name="powerdown">Power Down</string>
+    <string name="cardstatus">Card Status</string>
+    <string name="powedown">Power Down</string>
+    <string name="sendapdu">Send APDU</string>
+    <string name="readbinary">Read Binary</string>
+    <string name="ScanBarcode">Scan Barcode</string>
+    <string name="senddata">Send Data</string>
+    <string name="Returncode">ReturnCode</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Exiting Application.</string>
+    <string name="title_connecting">connecting...</string>
+    <string name="title_not_connected">not connected</string>
+    <string name="appinfo">Version: 1.12</string>
+    <!-- DeviceListActivity -->
+    <string name="scanning">Scanning for devices...</string>
+    <string name="select_device">Select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+    <string name="note">Note </string>
+    <!-- Options Menu -->
+    <string name="menu_quit">Quit</string>
+    <string name="about">Prowess Demo App Uses Prowess SDK, it used to communicate to Leopard which having peripherals like</string>
+    <string name="information">This application has been designed to work with Evolute Systems Leopard device.\nLeopard Prowess SDK is available from Evolute Systems as per request.</string>
+
+
+    <string name="radio_9600">9600</string>
+    <string name="radio_11520">115200</string>
+    <string name="ibc">IBC</string>
+    <string name="btn_display">Display</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="applc_number">
+        Application\n
+        Number
+    </string>
+
+</resources>

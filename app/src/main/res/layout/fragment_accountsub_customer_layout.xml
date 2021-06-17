@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@android:style/TextAppearance.DeviceDefault.Large"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f5f5f5">
+
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="CUSTOMER PROFILE (INDIVIDUAL)"
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="( PLEASE FILL UP THE FORM IN CAPITAL LETTERS ONLY )"
+                        android:textSize="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:text="Branch :" />
+
+                            <TextView
+                                android:id="@+id/Customer_branch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="-"
+                                android:textColor="#f14b4b" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:text="Date: " />
+
+                            <TextView
+                                android:id="@+id/applicants_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="#f14b4b" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--End of Layout 2 -->
+
+                <LinearLayout
+                    android:id="@+id/three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/two"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Applicant's Detail"
+                        android:textColor="#d93434"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="Applicant's Name" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#fff">
+
+                            <Spinner
+                                android:id="@+id/cus_spinner_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:spinnerMode="dropdown" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/cus_first_nameEditText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:background="#fff"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:hint="FIRST NAME"
+                                android:imeOptions="actionDone"
+                                android:inputType="textPersonName|textCapCharacters"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/cus_middle_nameEditText"
+                                android:layout_width="50dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:background="#fff"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:hint="MIDDLE NAME"
+                                android:inputType="textPersonName|textCapCharacters"
+                                android:maxLines="1" />
+
+                            <EditText
+                                android:id="@+id/cus_last_nameEditText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:background="#fff"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:hint="LAST NAME"
+                                android:inputType="textPersonName|textCapCharacters"
+                                android:maxLines="1" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Gender: " />
+
+                        <RadioGroup
+                            android:id="@+id/cus_radioGroupGender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radiogendermale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="Male"
+                                android:textSize="12dp" />
+
+                            <RadioButton
+                                android:id="@+id/radiogenderfemale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Female"
+                                android:textSize="12dp" />
+
+                            <RadioButton
+                                android:id="@+id/radiogenderother"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Other"
+                                android:textSize="12dp" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mother Name:" />
+
+                        <EditText
+                            android:id="@+id/cus_mothersnameEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:background="#fff"
+                            android:gravity="center"
+                            android:hint="ENTER MOTHERS NAME"
+                            android:inputType="textPersonName|textCapCharacters"
+                            android:maxLines="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:text="Birth Date " />
+
+                        <Button
+                            android:id="@+id/cus_birthdateEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:hint="DD-MM-YYYY" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="Aadhar Card No." />
+
+                        <EditText
+                            android:id="@+id/cus_adharEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="#fff"
+                            android:gravity="center"
+                            android:hint="ENTER ADHAR NO."
+                            android:inputType="number"
+                            android:maxLength="16"
+                            android:maxLines="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:text="PAN No." />
+
+                        <EditText
+                            android:id="@+id/cus_panEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="#fff"
+                            android:gravity="center"
+                            android:hint="ENTER PAN NO."
+                            android:inputType="textCapCharacters"
+                            android:maxLines="1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:text="Nationality" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff">
+
+                            <Spinner
+                                android:id="@+id/cus_nationality_spinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:spinnerMode="dialog" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:text="Religion " />
+
+                        <EditText
+                            android:id="@+id/cus_religionEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="#fff"
+                            android:gravity="center"
+                            android:hint="ENTER RELIGION"
+                            android:inputType="textCapCharacters"
+                            android:maxLines="1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:text="Caste" />
+
+                        <EditText
+                            android:id="@+id/cus_casteEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="#fff"
+                            android:gravity="center"
+                            android:hint="ENTER CASTE"
+                            android:inputType="textCapCharacters"
+                            android:maxLines="1" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:text="Select Occupation" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff">
+
+                        <Spinner
+                            android:id="@+id/cus_occupationSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:spinnerMode="dialog" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Marital Status" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#fff">
+
+                            <Spinner
+                                android:id="@+id/cus_maritalDropDown"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:spinnerMode="dropdown" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--   End of layout three -->
+                <LinearLayout
+                    android:id="@+id/four"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/three"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Permanent Address Details"
+                            android:textColor="#ce2525"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_margin="5dp"
+                                android:text="S/o,D/o,W/o :" />
+
+                            <EditText
+                                android:id="@+id/cus_comm_guardianEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:background="#fff"
+                                android:gravity="center"
+                                android:hint="ENTER GUARDIAN NAME"
+                                android:inputType="textCapCharacters"
+                                android:maxLines="1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_margin="5dp"
+                                android:text="Building Name/Flat No :" />
+
+                            <EditText
+                                android:id="@+id/cus_comm_flatNameEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:background="#fff"
+                                android:gravity="center"
+                                android:hint="ENTER Building Name/Flat No"
+                                android:inputType="textCapCharacters"
+                                android:maxLines="1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_margin="5dp"
+                                android:text="Landmark :" />
+
+                            <EditText
+                                android:id="@+id/cus_comm_landmarkEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:background="#fff"
+                                android:gravity="center"
+                                android:hint="ENTER Landmark"
+                                android:inputType="textCapCharacters"
+                                android:maxLines="1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_margin="5dp"
+                                android:text="Street/Locaton :" />
+
+                            <EditText
+                                android:id="@+id/cus_comm_locationEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:background="#fff"
+                                android:gravity="center"
+                                android:hint="ENTER Street/Locaton"
+                                android:inputType="textCapCharacters"
+                                android:maxLines="1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_margin="5dp"
+                                android:text="Country :" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#fff">
+
+                                <Spinner
+                                    android:id="@+id/cus_country_spinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:spinnerMode="dialog" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_margin="5dp"
+                                android:text="State" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#fff">
+
+                                <Spinner
+                                    android:id="@+id/cus_state_spinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:spinnerMode="dialog" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_margin="5dp"
+                                android:text="District" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#fff">
+
+                                <Spinner
+                                    android:id="@+id/cus_district_spinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:spinnerMode="dialog" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_margin="5dp"
+                                android:text="City" />
+
+                            <EditText
+                                android:id="@+id/cus_comm_cityEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:background="#fff"
+                                android:gravity="center"
+                                android:hint="ENTER CITY"
+                                android:inputType="textCapCharacters"
+                                android:maxLines="1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_margin="5dp"
+                                android:text="Pincode" />
+
+                            <EditText
+                                android:id="@+id/cus_comm_pincodeEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:background="#fff"
+                                android:gravity="center"
+                                android:hint="ENTER PINCODE"
+                                android:inputType="number"
+                                android:maxLines="1" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Current Address Details"
+                            android:textColor="#ce2525"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/cus_checkBoxpermanentadress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="center"
+                            android:text="Same as Permanent Adress" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_communicationAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_margin="5dp"
+                            android:text="S/o,D/o,W/o :" />
+
+                        <EditText
+                            android:id="@+id/cus_per_guardianEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="#fff"
+                            android:gravity="center"
+                            android:hint="ENTER GUARDIAN NAME"
+                            android:inputType="textCapCharacters"
+                            android:maxLines="1" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_margin="5dp"
+                            android:text="Building Name/Flat No :" />
+
+                        <EditText
+                            android:id="@+id/cus_per_flatNameEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="#fff"
+                            android:gravity="center"
+                            android:hint="ENTER Building Name/Flat No"
+                            android:inputType="textCapCharacters"
+                            android:maxLines="1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_margin="5dp"
+                            android:text="Landmark :" />
+
+                        <EditText
+                            android:id="@+id/cus_per_landmarkEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="#fff"
+                            android:gravity="center"
+                            android:hint="ENTER Landmark"
+                            android:inputType="textCapCharacters"
+                            android:maxLines="1" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_margin="5dp"
+                            android:text="Street/Locaton :" />
+
+                        <EditText
+                            android:id="@+id/cus_per_locationEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="#fff"
+                            android:gravity="center"
+                            android:hint="ENTER Street/Locaton"
+                            android:inputType="textCapCharacters"
+                            android:maxLines="1" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_margin="5dp"
+                            android:text="Country :" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff">
+
+                            <Spinner
+                                android:id="@+id/cus_curre_country_spinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:spinnerMode="dialog" />
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_margin="5dp"
+                            android:text="State" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff">
+
+                            <Spinner
+                                android:id="@+id/cus_curre_state_spinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:spinnerMode="dialog" />
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_margin="5dp"
+                            android:text="District" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff">
+
+                            <Spinner
+                                android:id="@+id/cus_curre_district_spinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:spinnerMode="dialog" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_margin="5dp"
+                            android:text="City" />
+
+                        <EditText
+                            android:id="@+id/cus_per_cityEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="#fff"
+                            android:gravity="center"
+                            android:hint="ENTER CITY"
+                            android:inputType="textCapCharacters"
+                            android:maxLines="1" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_margin="5dp"
+                            android:text="Pincode" />
+
+                        <EditText
+                            android:id="@+id/cus_per_pincodeEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="#fff"
+                            android:gravity="center"
+                            android:hint="ENTER PINCODE"
+                            android:inputType="number"
+                            android:maxLines="1" />
+
+
+                    </LinearLayout>
+                    <!--<LinearLayout
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Office Address"/>
+                        <CheckBox
+                            android:id="@+id/cus_checkBoxofficeadress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:text="Same as Communication Adress" />
+                        <LinearLayout
+                            android:id="@+id/linear_officeAddress"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_margin="5dp"
+                                android:layout_gravity="left"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Office Address"/>
+                            <EditText
+                                android:background="#fff"
+                                android:id="@+id/cus_office_addressEditText"
+                                android:maxLines="5"
+                                android:hint="ENTER ADDRESS"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Country"/>
+                            <EditText
+                                android:id="@+id/cus_office_countryEditText"
+                                android:background="#fff"
+                                android:text="INDIA"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="State"/>
+                            <EditText
+                                android:id="@+id/cus_office_stateEditText"
+                                android:background="#fff"
+                                android:text="KERALA"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="District"/>
+                            <EditText
+                                android:id="@+id/cus_office_districtEditText"
+                                android:background="#fff"
+                                android:hint="ENTER DISTRICT"
+                                android:gravity="center"                        android:layout_width="match_parent"
+                                android:layout_height="35dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pincode"/>
+
+                            <EditText
+                                android:id="@+id/cus_office_pincodeEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:inputType="number"
+                                android:background="#fff"
+                                android:gravity="center"
+                                android:hint="ENTER PINCODE" />
+                            </LinearLayout>
+
+                    </LinearLayout>-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+
+                            android:text="Mobile Number" />
+
+                        <EditText
+                            android:id="@+id/cus_mobileNumberEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="#fff"
+                            android:gravity="center"
+                            android:hint="Enter Mobile Number"
+                            android:inputType="number"
+                            android:maxLines="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Contact Number (Office)" />
+
+                        <EditText
+                            android:id="@+id/cus_contactOfficeEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="#fff"
+                            android:gravity="center"
+                            android:hint="Enter Telephone Number"
+
+                            android:inputType="number"
+                            android:maxLines="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Contact Number (Home)" />
+
+                        <EditText
+                            android:id="@+id/cus_contactHomeEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="#fff"
+                            android:gravity="center"
+                            android:hint="Enter Telephone Number"
+                            android:inputType="number"
+                            android:maxLines="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="Email ID" />
+
+                        <EditText
+                            android:id="@+id/cus_emailEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="#fff"
+                            android:gravity="center"
+                            android:hint="Enter Email Address"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/cs_nextbtn"
+                            style="@style/RbButton.Inverse.Rounded.LightBlue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="NEXT" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <!--   End of layout four -->
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </TableLayout>
+</ScrollView>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/account_status_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/account_status_btn_bg"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/mini_statement_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/mini_statement_btn_bg"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/balance_enquiry_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/balance_enquiry_btn_bg"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/inau_btn_acc_statement"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/pendinglist_btn_bg"
+            android:gravity="right|center"
+            android:text="Acc Statement "
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+</RelativeLayout>

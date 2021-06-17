@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            tools:context="com.finwingway.digicob.login">
+
+            <ImageView
+                android:id="@+id/header_icon"
+                android:layout_width="match_parent"
+                android:layout_height="223dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo" />
+
+            <RelativeLayout
+                android:id="@+id/login_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/header_icon">
+
+                <LinearLayout
+                    android:id="@+id/usernameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/login_layout_padding"
+                    android:paddingRight="@dimen/login_layout_padding"
+                    android:paddingTop="@dimen/login_layout_padding_top"
+                    android:weightSum="1">
+                    <!-- <android.support.design.widget.TextInputLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginBottom="8dp"
+                         android:layout_marginTop="16dp"
+                         app:passwordToggleTint="#4b4444"
+                         android:foregroundTint="#4b4444">
+
+                         <android.support.design.widget.TextInputEditText
+                             style="@style/RegistrationEditTextStyle"
+                             android:id="@+id/ip_global"
+                             android:text="finwingway.com"
+                             android:hint="Enter IP"
+                             android:layout_gravity="center_horizontal"/>
+
+
+                     </android.support.design.widget.TextInputLayout>
+                     <Button
+                         android:id="@+id/set_ip"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center_horizontal"
+                         android:layout_marginLeft="@dimen/login_button_margin"
+                         android:layout_marginRight="@dimen/login_button_margin"
+                         android:layout_marginTop="@dimen/login_button_margin"
+                         android:textColor="#222"
+                         android:text="Set IP"/>-->
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:foregroundTint="#4b4444">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/username_edit_text"
+                            style="@style/RegistrationEditTextStyle"
+                            android:layout_gravity="center_horizontal"
+                            android:hint="Username"
+                            android:imeOptions="actionNext"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="#000" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="16dp"
+                        android:foregroundTint="#4b4444"
+                        app:passwordToggleTint="#4b4444">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/password_edit_text"
+                            style="@style/RegistrationEditTextStyle"
+                            android:layout_gravity="center_horizontal"
+                            android:hint="Password"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPassword"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="#000" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/login_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/login_button_margin"
+                        android:layout_marginRight="@dimen/login_button_margin"
+                        android:layout_marginTop="@dimen/login_button_margin"
+                        android:text="Log in" />
+
+                    <Button
+                        android:id="@+id/login_biometric_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/login_button_margin"
+                        android:layout_marginRight="@dimen/login_button_margin"
+                        android:layout_marginTop="@dimen/login_button_margin"
+                        android:text="Log in with Fingerprint" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/loginStatustxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/usernameLayout"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:text="Ckeck your Username/Password!"
+                    android:textColor="#d23636"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/login_container_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/app_exit_img_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="?attr/selectableItemBackground"
+        android:src="@drawable/exit_app_btn_bg" />
+
+    <ImageButton
+        android:id="@+id/bluetooth_img_btn"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/selectableItemBackground"
+        android:src="@drawable/bluetooth_btn" />
+
+</RelativeLayout>

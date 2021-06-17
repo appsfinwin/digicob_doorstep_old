@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/change_image_viewlinear"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="center"
+                android:id="@+id/change_image_view2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="center"
+                android:id="@+id/change_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="center"
+                android:id="@+id/change_image_view3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    <ImageView
+        android:id="@+id/change_image_close_image_button"
+        android:layout_margin="16dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/close_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp" />
+    <Button
+        android:layout_below="@+id/change_image_viewlinear"
+        android:id="@+id/change_image_button"
+        android:text="CHANGE IMAGE"
+        style="@style/RbButton.Red"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

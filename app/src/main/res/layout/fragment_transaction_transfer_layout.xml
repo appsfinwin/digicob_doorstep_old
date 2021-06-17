@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient" />
+
+    <TextView
+        android:id="@+id/transferTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="20dp"
+        android:text="FUND TRANSFER"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/TransferCancelBtn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/close_btn" />
+
+    <ScrollView
+        android:id="@+id/scrollViewTransfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/transferTextView">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:stretchColumns="1">
+
+            <LinearLayout
+                android:id="@+id/LinearTransfer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectangle"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:id="@+id/linear_tran_debit_acc_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_margin="5dp"
+                                android:text="Debit-Account Number"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#fff">
+
+                                <EditText
+                                    android:id="@+id/debitAccountNumberTextView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/edit_text_style"
+                                    android:ellipsize="end"
+                                    android:gravity="center"
+                                    android:hint="Enter Account Number"
+                                    android:inputType="number"
+                                    android:maxLength="20"
+                                    android:maxLines="1"
+                                    android:padding="5dp"
+                                    android:textColor="#000"
+                                    android:textSize="22sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/debitAuthbtn"
+                                style="@style/RbButton.Green"
+                                android:layout_width="68dp"
+                                android:layout_height="48dp"
+                                android:layout_gravity="center"
+                                android:text="OK" />
+
+                            <!--<Button-->
+                            <!--android:id="@+id/debit_search_btn"-->
+                            <!--style="@style/RbButton.Red"-->
+                            <!--android:layout_width="32dp"-->
+                            <!--android:layout_height="32dp"-->
+                            <!--android:layout_marginLeft="50dp"-->
+                            <!--android:background="@drawable/search" />-->
+
+                            <ImageButton
+                                android:id="@+id/debit_search_btn"
+                                android:layout_width="75dp"
+                                android:layout_height="52dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginStart="10dp"
+                                android:background="@color/float_transparent"
+                                android:padding="10dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/search" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/debit_linear_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/rectangle"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+
+                                    android:text="Name : "
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/debitName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:text="Status : " />
+
+                                <TextView
+                                    android:id="@+id/debitStatus"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#0cb929" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:text="Mobile : "
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/debitMobile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#0cb929" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginRight="5dp"
+                                    android:text="Balance : "
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/debitBalance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#fa6f6f"
+                        android:orientation="vertical" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rectangle"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:id="@+id/linear_tran_credit_acc_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_margin="5dp"
+                                android:text="Credit-Account Number"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#fff">
+
+                                <EditText
+                                    android:id="@+id/creditAccountNumberTextView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/edit_text_style"
+                                    android:ellipsize="end"
+                                    android:gravity="center"
+                                    android:hint="Enter Account Number"
+                                    android:inputType="number"
+                                    android:maxLength="20"
+                                    android:maxLines="1"
+                                    android:padding="5dp"
+                                    android:textColor="#000"
+                                    android:textSize="22sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/creditAuthbtn"
+                                style="@style/RbButton.Green"
+                                android:layout_width="68dp"
+                                android:layout_height="48dp"
+                                android:layout_gravity="center"
+                                android:text="OK" />
+
+                            <!--<Button-->
+                            <!--android:id="@+id/credit_search_btn"-->
+                            <!--style="@style/RbButton.Red"-->
+                            <!--android:layout_width="32dp"-->
+                            <!--android:layout_height="32dp"-->
+                            <!--android:layout_marginLeft="50dp"-->
+                            <!--android:background="@drawable/search" />-->
+
+                            <ImageButton
+                                android:id="@+id/credit_search_btn"
+                                android:layout_width="75dp"
+                                android:layout_height="52dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginStart="10dp"
+                                android:background="@color/float_transparent"
+                                android:padding="10dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/search" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/credit_linear_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/rectangle"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginRight="5dp"
+                                    android:text="Name : "
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/creditName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:text="Status : "
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/CreditStatusText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#0cb929" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:text="Mobile : "
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/creditMobile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#0cb929" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="10dp"
+                android:background="#fa6f6f" />
+
+            <LinearLayout
+                android:id="@+id/amount_transfer_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Transfer Amount"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fff">
+
+                    <EditText
+                        android:id="@+id/transferAmountEditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edit_text_style"
+                        android:gravity="center"
+                        android:hint="Enter Amount"
+                        android:inputType="numberDecimal"
+                        android:maxLength="7"
+                        android:maxLines="1"
+                        android:padding="5dp"
+                        android:textColor="#000"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/transferAmountOKbtn"
+                    style="@style/RbButton.Red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="OK" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/otpLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/scrollViewTransfer">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:background="#fff">
+
+                            <EditText
+                                android:id="@+id/otpEditTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:background="@drawable/edit_text_style"
+                                android:gravity="center"
+                                android:hint="Enter OTP"
+                                android:inputType="number"
+                                android:maxLength="8"
+                                android:maxLines="1"
+                                android:padding="5dp"
+                                android:textColor="#000"
+                                android:textSize="22sp" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/authOTPbtn"
+                            style="@style/RbButton.Red"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:text="CONFIRM" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </TableLayout>
+    </ScrollView>
+</RelativeLayout>

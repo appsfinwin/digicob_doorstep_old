@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#f5f5f5"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/linear"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_marginBottom="16dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:text="KYC - DOCUMENTS"/>
+            <!--<LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="16dp"
+                android:layout_height="wrap_content">
+
+               &lt;!&ndash; <Spinner
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/proofSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:textColor="#000"
+                    android:theme="@android:style/Theme.Holo.Light.DarkActionBar"/>&ndash;&gt;
+
+                <Spinner
+                    android:layout_margin="16dp"
+                    android:id="@+id/TypeOfDocumentSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:textColor="#000"
+                    android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+                <ImageButton
+                    android:layout_gravity="center"
+                    android:id="@+id/cameraCropbtn"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@mipmap/ic_photo_camera_black_48dp"/>
+               </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/scanFingerbtn"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="92dp"
+                    android:layout_height="92dp"
+                    android:background="@drawable/finger_scanner_icon"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_below="@+id/scanFingerbtn"
+                    android:text="SCAN FINGER"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:layout_toRightOf="@+id/scanFingerbtn"
+                    android:id="@+id/signatureImageview"
+                    android:layout_width="92dp"
+                    android:layout_height="92dp"
+                    android:background="@drawable/signature"/>
+                <TextView
+                    android:layout_toRightOf="@+id/scanFingerbtn"
+                    android:layout_below="@+id/scanFingerbtn"
+                    android:textStyle="bold"
+                    android:text="SIGNATURE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/proofLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </LinearLayout>-->
+        </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/relative"
+                android:gravity="center"
+                android:layout_below="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_marginRight="16dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content">
+                    <ImageButton
+                        android:layout_gravity="center"
+                        android:id="@+id/kyc_applicatsPhotoImagebtn"
+                        android:layout_width="92dp"
+                        android:layout_height="92dp"
+                        android:background="@null"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/user_icon" >
+                    </ImageButton>
+                    <TextView
+                        android:layout_below="@+id/kyc_applicatsPhotoImagebtn"
+                        android:text="PHOTOGRAPH"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginRight="16dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content">
+                    <ImageButton
+                        android:layout_gravity="center"
+                        android:id="@+id/kyc_imagebtn_sign"
+                        android:layout_width="92dp"
+                        android:layout_height="92dp"
+                        android:background="@null"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/signature" >
+                    </ImageButton>
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:layout_below="@+id/kyc_imagebtn_sign"
+                        android:text="SIGNATURE"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content">
+                    <ImageButton
+                        android:id="@+id/kyc_imagebtn_biometric"
+                        android:layout_width="92dp"
+                        android:layout_height="92dp"
+                        android:background="@null"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/finger_scanner_icon" >
+                    </ImageButton>
+                    <TextView
+
+                        android:layout_below="@+id/kyc_imagebtn_biometric"
+                        android:text="BIOMETRIC"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <RelativeLayout
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_below="@+id/linear2"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:id="@+id/relativeProof"
+                    android:layout_marginRight="16dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content">
+                    <ImageButton
+                        android:layout_gravity="center"
+                        android:id="@+id/kyc_proofIdImagebtn"
+                        android:layout_width="92dp"
+                        android:layout_height="92dp"
+                        android:background="@null"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/proofid" >
+                    </ImageButton>
+                    <TextView
+                        android:layout_below="@+id/kyc_proofIdImagebtn"
+                        android:text="PROOF OF ID"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_toRightOf="@+id/relativeProof"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content">
+                    <ImageButton
+                        android:layout_marginLeft="16dp"
+                        android:id="@+id/kyc_proofAddressImagebtn"
+                        android:layout_width="92dp"
+                        android:layout_height="92dp"
+                        android:background="@null"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/proofid" >
+                    </ImageButton>
+                    <TextView
+                        android:layout_below="@+id/kyc_proofAddressImagebtn"
+                        android:text="PROOF OF ADDRESS"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/kyc_prevbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/RbButton.Inverse.Rounded.Red"
+                    android:text="PREV"/>
+
+                <Button
+                    android:id="@+id/kyc_nextbtn"
+                    style="@style/RbButton.Inverse.Rounded.LightBlue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="NEXT" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </TableLayout>
+</ScrollView>

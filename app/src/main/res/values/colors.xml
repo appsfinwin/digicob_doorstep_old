@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#a7000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="toolbarText">#000000</color>
+    <color name="editTextcolor">#b42424</color>
+    <color name="linearAddress">#dadada</color>
+    <color name="dark_red">#ba2626</color>
+    <color name="black">#000000</color>
+
+
+
+    <!--splash-->
+    <color name="splash_background">#be2672</color>
+    <color name="splash_logo">#fff</color>
+
+    <color name="colorCell">#015093</color>
+
+</resources>

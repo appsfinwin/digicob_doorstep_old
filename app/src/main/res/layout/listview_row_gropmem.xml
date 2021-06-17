@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight">
+
+    <TextView
+        android:id="@+id/txt_list_slno"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:hint="SlNo"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/txt_branch_id"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:hint="Branch ID"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txt_list_cusid"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:hint="Customer ID"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/txt_list_cusname"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:hint="Customer Name"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <Spinner
+        android:id="@+id/spnr_cnsumr_goods"
+        android:layout_width="150dp"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:layout_weight="1.5"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:hint="ConsumerGoods"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/edt_list_amount"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:hint="Amount"
+        android:inputType="numberDecimal"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/edt_list_nominee"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:hint="Nominee Name"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/edt_list_mob"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:hint="Nominee Mobile No"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/edt_list_address"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:hint="Nominee Address"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/edt_list_insurance_fee"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:hint="Insurance Fee"
+        android:inputType="numberDecimal"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/edt_list_docmntnFee"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:hint="Documentation Fee"
+        android:inputType="numberDecimal"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/edt_list_cgst"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:hint="CGST"
+        android:inputType="numberDecimal"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/edt_list_sgst"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:hint="SGST"
+        android:inputType="numberDecimal"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/edt_list_cess"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:hint="Cess"
+        android:inputType="numberDecimal"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/edt_list_disbrsmnt_amnt"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:hint="Disbursement Amount"
+        android:inputType="numberDecimal"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_list_action"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="X" />
+
+</LinearLayout>

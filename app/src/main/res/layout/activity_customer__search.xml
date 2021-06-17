@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/with_linear_acc_search"
+    android:layout_width="match_parent"
+    android:layout_height="650dp"
+    android:layout_below="@+id/tran_linear_acc_no"
+    android:layout_gravity="center"
+    android:background="@drawable/gradient"
+    android:minHeight="450dp">
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@drawable/gradient" />-->
+
+    <LinearLayout
+        android:id="@+id/linear_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TableLayout
+            android:id="@+id/linear_acc_no1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/rectangle"
+            android:stretchColumns="2"
+            android:orientation="vertical">
+
+            <TableRow
+                android:id="@+id/linear_tran_debiacc_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColor="#000000"
+                    android:text="Select Branch"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textSize="18sp"
+                    android:text=" : " />
+
+                <Spinner
+                    android:id="@+id/spinner_branch_cus"
+                    style="@style/spinner_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:spinnerMode="dropdown" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/linear_tran_debit_acc_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColor="#000000"
+                    android:text="Customer ID"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textSize="18sp"
+                    android:text=" : " />
+
+                <EditText
+                    android:id="@+id/edt_search_cusid"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edit_text_style"
+                    android:gravity="center"
+                    android:hint="Enter Customer ID"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+            </TableRow>
+        </TableLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_acc_no1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/btn_search_cus"
+                style="@style/RbButton.Green"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_acc_no1"
+                android:layout_marginTop="10dp"
+                android:text="Submit" />
+
+            <Button
+                android:id="@+id/btn_cancel_cus"
+                style="@style/RbButton.Red"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_acc_no1"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/search_search_btn"
+                android:text="Cancel" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/search_details_cus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tv_wrng_msg_cus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/title_start_margin"
+            android:text=""
+            android:textColor="@color/editTextcolor"
+            android:textSize="24sp"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

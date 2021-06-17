@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient" />
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/miniStatementCANCELbtn"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:background="@drawable/close_btn"-->
+    <!--android:layout_width="48dp"-->
+    <!--android:layout_height="48dp" />-->
+
+    <ImageButton
+        android:id="@+id/miniStatementCANCELbtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/float_transparent"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/close_btn" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:id="@+id/Linear1"
+            android:layout_width="474dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:text="Account Number"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#fff">
+
+                <EditText
+                    android:id="@+id/accountNumberMiniStatementEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_style"
+                    android:gravity="center"
+                    android:hint=" Enter Your Account Number "
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="40dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="#fff">
+
+                <Button
+                    android:id="@+id/miniStatementOKbtn"
+                    style="@style/RbButton.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="OK" />
+
+                <ImageButton
+                    android:id="@+id/mini_statement_acc_search_btn"
+                    android:layout_width="85dp"
+                    android:layout_height="67dp"
+                    android:layout_gravity="center"
+                    android:background="@color/float_transparent"
+                    android:padding="15dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/search" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--<ImageButton-->
+        <!--android:id="@+id/mini_statement_acc_search_btn"-->
+        <!--android:layout_width="32dp"-->
+        <!--android:layout_height="32dp"-->
+        <!--android:layout_alignEnd="@+id/Linear1"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginTop="41dp"-->
+        <!--android:background="@drawable/search"-->
+        <!--android:layout_alignRight="@+id/Linear1" />-->
+
+
+    </RelativeLayout>
+</RelativeLayout>

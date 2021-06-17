@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="#f5f5f5"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient" />
+    <!--
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:textSize="20sp"
+                        android:id="@+id/dailyDepositbtn"
+                        android:layout_width="200dp"
+                        android:layout_height="80dp"
+                        style="@style/RbButton.Inverse.Rounded.Orange"
+                        android:text="DAILY DEPOSIT"
+                        android:layout_margin="16dp"/>
+                    <Button
+                        android:textSize="20sp"
+                        android:id="@+id/cashDepositbtn"
+                        android:layout_width="200dp"
+                        android:layout_height="80dp"
+                        style="@style/RbButton.Inverse.Rounded.Orange"
+                        android:text="CASH DEPOSIT"
+                        android:layout_margin="16dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:textSize="20sp"
+                        android:id="@+id/cashWithdrawelbtn"
+                        android:layout_width="200dp"
+                        android:layout_height="80dp"
+                        style="@style/RbButton.Inverse.Rounded.Green"
+                        android:text="CASH WITHDRAWAL"
+                        android:layout_margin="16dp"/>
+                    <Button
+                        android:textSize="20sp"
+                        android:id="@+id/transferBtn"
+                        android:layout_width="200dp"
+                        android:padding="5dp"
+                        android:layout_height="80dp"
+                        style="@style/RbButton.Inverse.Rounded.LightBlue"
+                        android:text="TRANSFER (onUs)"
+                        android:layout_margin="16dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:textSize="20sp"
+                android:id="@+id/neft_transferBtn"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                style="@style/RbButton.Inverse.Rounded.Red"
+                android:text="NEFT/IMPS"
+                android:layout_margin="16dp"/>
+        </LinearLayout>
+    -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:visibility="gone"
+                        android:id="@+id/dailyDepositbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:src="@drawable/daily_deposit_btn_bg" />
+
+                    <ImageButton
+                        android:id="@+id/cashDepositbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:src="@drawable/cash_depo_btn_bg" />
+
+                    <ImageButton
+                        android:id="@+id/cashWithdrawelbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:src="@drawable/cash_with_btn_bg" />
+
+                    <ImageButton
+                        android:id="@+id/transferBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:src="@drawable/transfer_btn_bg" />
+
+                    <ImageButton
+                        android:visibility="gone"
+                        android:id="@+id/neft_transferBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:src="@drawable/neft_imps_btn_bg" />
+
+                    <ImageButton
+                        android:visibility="gone"
+                        android:id="@+id/loan_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:src="@drawable/loan_btn_bg" />
+
+                    <ImageButton
+                        android:id="@+id/loan_clsng_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:src="@drawable/lon_clsng_btn_bg"
+                        android:visibility="gone" />
+
+                    <!--  <Button
+                          android:id="@+id/xxxxx"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" />-->
+                </LinearLayout>
+            </LinearLayout>
+        </TableLayout>
+    </ScrollView>
+</RelativeLayout>
